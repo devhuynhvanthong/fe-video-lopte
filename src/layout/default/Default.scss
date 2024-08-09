@@ -1,0 +1,14 @@
+@import "../../assets/css/variable";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Montserrat;
+}
+.container {
+  background-image: url(../../assets/image/background.jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 60px 100px;
+}

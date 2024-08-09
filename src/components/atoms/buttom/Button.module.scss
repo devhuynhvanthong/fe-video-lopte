@@ -1,0 +1,13 @@
+@import "../../../assets/css/variable";
+.button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: $blue-border;
+  border: none;
+  border-radius: 5px;
+  color: $white-text;
+  transition: background-color 0.5s linear;
+}
+.button:hover {
+  background-color: $btnHover;
+}

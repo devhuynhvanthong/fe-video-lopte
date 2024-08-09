@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  &-img {
+    width: 40px;
+    height: auto;
+  }
+  &-text {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-left: 10px;
+  }
+}

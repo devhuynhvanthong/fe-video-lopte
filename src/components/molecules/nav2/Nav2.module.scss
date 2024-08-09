@@ -1,0 +1,35 @@
+@import "../../../assets/css/variable";
+.container {
+}
+.boxNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  list-style: none;
+  transition: all 0.3s;
+  &-link {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &:nth-last-child(1) {
+      padding: 0.9rem 1.9rem;
+      background-color: $blue-text;
+      border-radius: 16px;
+      &:hover {
+        transform: scale(1);
+      }
+    }
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &-item {
+      text-decoration: none;
+      color: $black;
+      &__btn {
+        color: white;
+      }
+    }
+  }
+}

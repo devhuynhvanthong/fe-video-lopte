@@ -1,0 +1,66 @@
+@import "../../../assets/css/variable";
+.container {
+}
+.checkMenu {
+  //   display: none;
+}
+.labeCheck {
+  //   display: none;
+}
+.iconMenu {
+  display: none;
+}
+.iconClose {
+  display: none;
+}
+@media screen and (max-width: $mobile-size) {
+  .btn {
+    background-color: $blue-border;
+  }
+  .containerBar {
+    display: none;
+  }
+  .iconMenu {
+    display: block;
+  }
+  .iconClose {
+    display: block;
+    font-size: 25px;
+  }
+  .labeCheck {
+    display: block;
+  }
+  .checkBackground {
+    z-index: 2;
+    position: fixed;
+    background-color: $blue-text;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnCheck {
+    font-size: 25px;
+    z-index: 2;
+    // position: fixed;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+  }
+  .btnHide {
+    display: none;
+  }
+  .btnCancel {
+    display: block;
+    z-index: 3;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    padding: 10px;
+    right: 100px;
+  }
+  .btnCancelhide {
+    display: none;
+  }
+}

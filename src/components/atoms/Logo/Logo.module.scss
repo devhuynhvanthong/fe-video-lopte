@@ -1,0 +1,25 @@
+@import " ../../../../../assets/css/variable";
+
+.container {
+  // border: 10px solid green;
+  width: 100vw;
+  display: flex;
+  // height: 100vh;
+  flex-direction: row;
+  position: relative;
+  // justify-content: center;
+  align-items: center;
+}
+.logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-text;
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media screen and (max-width: $mobile-size) {
+  .btn {
+    background-color: $blue-border;
+  }
+}

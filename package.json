@@ -7,7 +7,8 @@
     "dev": "vite --port 3017",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 3000"
+    "preview": "vite preview --port 3000",
+    "start": "vite"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

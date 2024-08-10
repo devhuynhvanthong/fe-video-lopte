@@ -179,7 +179,11 @@ const handleDelete = (record) => {
  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 ">
-      <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-4">
+      <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-4"
+      style={{
+        marginLeft: "20px",
+        marginRight: "20px"
+      }}>
         <div className="flex items-center justify-between mb-4">
           <h1 className="text-2xl font-bold">Bảng Điều Khiển</h1>
           <Button

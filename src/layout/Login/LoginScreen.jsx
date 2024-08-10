@@ -44,7 +44,11 @@ const LoginScreen = () => {
       className="flex items-center justify-center min-h-screen bg-gray-100"
       style={{ backgroundColor: "#DFDFDF" }}
     >
-      <div className="p-6 max-w-sm w-full bg-white rounded-lg shadow-md">
+      <div className="p-6 max-w-sm w-full bg-white rounded-lg shadow-md"
+      style={{
+        marginLeft: "20px",
+        marginRight: "20px"
+      }}>
         <h2 className="text-2xl font-bold mb-6 text-center">ĐĂNG NHẬP</h2>
         <form onSubmit={handleLogin}>
           <div className="mb-4">

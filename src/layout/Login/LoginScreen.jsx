@@ -21,11 +21,11 @@ const LoginScreen = () => {
         localStorage.setItem("token", res.data.access_token);
         navigate("/dashboard");
       } else {
-        setError("Username or password không đúng!");
+        setError("Tài khoản or mật khẩu không chính xác!");
       }
       // Handle successful login, e.g., redirect to another page
     } catch (error) {
-      setError("Login failed. Please check your credentials.");
+      setError("Truy cập server thất bại.");
     } finally {
       setLoading(false);
     }

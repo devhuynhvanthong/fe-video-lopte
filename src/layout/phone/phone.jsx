@@ -37,29 +37,16 @@ function Phone() {
       //   }
       // };
     useEffect(() => {
+
+        let subTitle = window.location?.origin
         if(key){
+            subTitle += key
             const customLink = `${formatDeeplink}${btoa(key)}`;
             setLink(customLink);
             window.location.href = customLink;
         }
-    },[key]);
-
-    useEffect(() => {
-        if (key) {
-         const currentDomain = window.location?.origin 
-   document.title = `Video Lopte - ${currentDomain}${key}`;
-        } else {
-          const currentDomain = window.location?.origin 
-   document.title = `Video Lopte - ${currentDomain}`;
-     }
-    
-   
-   // document.body.classList.add("overflow-hidden");
-   // return () => {
-   //   document.body.classList.remove("overflow-hidden");
-   // };
-   // eslint-disable-next-line react-hooks/exhaustive-deps
- }, []);
+        document.title = `Video Lopte - ${subTitle}`
+    },[])
 
    
   return (

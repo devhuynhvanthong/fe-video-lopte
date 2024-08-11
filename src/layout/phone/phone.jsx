@@ -11,22 +11,26 @@ function Phone() {
     const [Link, setLink] = React.useState("");
     const { key } = useParams();
     const link_dowload_app = import.meta.env.VITE_LINK_DOWLOAD_APP
-  
+    const formatDeeplink = import.meta.env.VITE_DEEP_LINK_APP
+
       const fetchData = async (key) => {
         try {
-          const response = await linkOriginByKey(key);
-          const { data } = response;
-
-          if (response.status === 200) {
-                
-                const url = data?.link_original;
-                const encodedUrl = btoa(key);
-                // console.log(data);
-              const customLink = `version-app-lopte://resolve/transfer?data=${encodedUrl}`;
-              setLink(customLink);
-                window.location.href = customLink;
-                // console.log(customLink);
-          }
+          // const response = await linkOriginByKey(key);
+          // const { data } = response;
+          //
+          // if (response.status === 200) {
+          //
+          //       const url = data?.link_original;
+          //       const encodedUrl = btoa(key);
+          //       // console.log(data);
+          //     const customLink = `version-app-lopte://resolve/transfer?data=${encodedUrl}`;
+          //     setLink(customLink);
+          //     window.location.href = customLink;
+          //       // console.log(customLink);
+          // }
+            const customLink = `${formatDeeplink}${btoa(key)}`;
+            setLink(customLink);
+            window.location.href = customLink;
         } catch (error) {
          
           console.error(

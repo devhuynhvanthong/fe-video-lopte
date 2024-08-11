@@ -31,7 +31,7 @@ const LoginScreen = () => {
     }
   };
  useEffect(() => {
-   document.title = "Login - Video APP Lopte";
+   document.title = "Login - Video Lopte";
   
    // document.body.classList.add("overflow-hidden");
    // return () => {

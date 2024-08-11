@@ -20,7 +20,7 @@ function Phone() {
           if (response.status === 200) {
                 
                 const url = data?.link_original;
-                const encodedUrl = btoa(url);
+                const encodedUrl = btoa(key);
                 // console.log(data);
               const customLink = `version-app-lopte://resolve/transfer?data=${encodedUrl}`;
               setLink(customLink);
@@ -45,10 +45,10 @@ function Phone() {
     useEffect(() => {
         if (key) {
          const currentDomain = window.location?.origin 
-   document.title = `Video App Lopte - ${currentDomain}${key}`;
+   document.title = `Video Lopte - ${currentDomain}${key}`;
         } else {
           const currentDomain = window.location?.origin 
-   document.title = `Video App Lopte - ${currentDomain}`;  
+   document.title = `Video Lopte - ${currentDomain}`;
      }
     
    

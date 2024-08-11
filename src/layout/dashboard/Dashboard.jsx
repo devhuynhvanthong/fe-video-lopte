@@ -146,7 +146,7 @@ const handleDelete = (record) => {
   setShowModalDelete(true);
 };
   useEffect(() => {
-    document.title = "Dashboard - Video App Lopte ";
+    document.title = "Dashboard - Video Lopte ";
     if (!searchParams.get("page")) {
       setSearchParams({
         page: "1",

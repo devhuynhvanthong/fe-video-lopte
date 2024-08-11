@@ -39,11 +39,14 @@ function Phone() {
     useEffect(() => {
 
         let subTitle = window.location?.origin
-        if(key){
+        if(key !== undefined){
             subTitle += key
-            const customLink = `${formatDeeplink}${btoa(key)}`;
-            setLink(customLink);
-            window.location.href = customLink;
+            if (formatDeeplink !== undefined) {
+                const customLink = `${formatDeeplink}${btoa(key)}`;
+                setLink(customLink);
+                window.location.href = customLink;
+            }
+
         }
         document.title = `Video Lopte - ${subTitle}`
     },[])

@@ -13,32 +13,9 @@ function Phone() {
     const link_dowload_app = import.meta.env.VITE_LINK_DOWLOAD_APP
     const formatDeeplink = import.meta.env.VITE_DEEP_LINK_APP
 
-      // const fetchData = async (key) => {
-      //   try {
-      //     const response = await linkOriginByKey(key);
-      //     const { data } = response;
-      //
-      //     if (response.status === 200) {
-      //
-      //           const url = data?.link_original;
-      //           const encodedUrl = btoa(key);
-      //           // console.log(data);
-      //         const customLink = `version-app-lopte://resolve/transfer?data=${encodedUrl}`;
-      //         setLink(customLink);
-      //         window.location.href = customLink;
-      //           // console.log(customLink);
-      //     }
-      //   } catch (error) {
-      //
-      //     console.error(
-      //       "Error fetching data:",
-      //       error.response.request.status === 401
-      //     );
-      //   }
-      // };
     useEffect(() => {
-
         let subTitle = window.location?.origin
+        document.title = `Video Lopte - ${subTitle}`
         if(key !== undefined){
             subTitle += key
             if (formatDeeplink !== undefined) {
@@ -46,9 +23,8 @@ function Phone() {
                 setLink(customLink);
                 window.location.href = customLink;
             }
-
         }
-        document.title = `Video Lopte - ${subTitle}`
+        window.close()
     },[])
 
    
